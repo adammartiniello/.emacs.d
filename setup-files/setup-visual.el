@@ -1,4 +1,4 @@
-;; Time-stamp: <2020-01-20 13:52:35 kmodi>
+;; Time-stamp: <2022-07-07 21:01:26 pi>
 
 ;; Set up the looks of emacs
 
@@ -108,8 +108,8 @@ Also restore the original frame size when disabling the menu bar."
     (add-to-list 'frame-inhibit-implied-resize 'tool-bar-lines))
 
 ;;;; Scroll bar
-(when (fboundp 'scroll-bar-mode)
-  (scroll-bar-mode -1))                 ;Disable the scroll bars
+;;(when (fboundp 'scroll-bar-mode)
+;;  (scroll-bar-mode -1))                 ;Disable the scroll bars
 
 ;;;; Window Dividers
 (use-package frame
