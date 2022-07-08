@@ -1,0 +1,11 @@
+recentf
+places
+abbrev_defs
+*.desktop
+elpa_*
+bm-repository
+auto-save-list
+transient
+*~
+*.eld
+*.dat
