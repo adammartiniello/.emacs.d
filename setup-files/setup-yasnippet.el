@@ -1,4 +1,4 @@
-;; Time-stamp: <2016-10-24 07:00:32 kmodi>
+;; Time-stamp: <2022-07-09 16:27:05 pi>
 
 ;; yasnippet
 ;; https://github.com/joaotavora/yasnippet
@@ -30,7 +30,7 @@
     (setq yas-snippet-dirs (list 'modi/yas-snippets-dir))
 
     (setq yas-new-snippet-default "# -*- mode: snippet -*-
-# contributor: Kaushal Modi
+# contributor: Adam Martiniello
 # name: $1
 # key: ${2:${1:$(yas--key-from-desc yas-text)}}${3:
 # binding: ${4:direct-keybinding}}${5:
