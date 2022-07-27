@@ -1,4 +1,4 @@
-;; Time-stamp: <2021-12-14 23:28:01 kmodi>
+;; Time-stamp: <2022-07-26 20:32:20 pi>
 ;; Author: Kaushal Modi
 
 ;; Global variables
@@ -79,7 +79,6 @@ need Org version to be at least 9.x.")
     gist
     git-timemachine ; walk through git revisions
     ggtags ctags-update
-    hardcore-mode
     hideshow-org
     htmlize
     hungry-delete
@@ -252,7 +251,6 @@ need Org version to be at least 9.x.")
   (require 'setup-git-link)
   (require 'setup-git-timemachine)
   (require 'setup-magit))
-(require 'setup-hardcore)
 (require 'setup-header2)
 (require 'setup-highlight)
 (require 'setup-htmlize)
