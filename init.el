@@ -1,4 +1,4 @@
-;; Time-stamp: <2022-07-26 20:32:20 pi>
+;; Time-stamp: <2022-07-26 21:28:04 pi>
 ;; Author: Kaushal Modi
 
 ;; Global variables
@@ -272,7 +272,7 @@ need Org version to be at least 9.x.")
 (require 'setup-neotree)
 (require 'setup-news)
 (require 'setup-nov)
-(require 'setup-org)
+;; (require 'setup-org) ;; TODO: Issues with org-mode: https://github.com/kaushalmodi/.emacs.d/issues/45
 (require 'setup-outshine)
 (when (executable-find "p4")
   (require 'setup-p4))
