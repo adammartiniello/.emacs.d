@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("6df6f58fe0f9179dcc272ba494ca508398d61d8cbfa2a668835f1eecc49acd92" default))
+ '(ignored-local-variable-values '((aggressive-indent-mode)))
  '(package-selected-packages
    '(eros deadgrep citeproc toc-org org-sticky-header emojify mastodon ivy-rich ivy-hydra emamux ace-window)))
 (custom-set-faces
