@@ -9,10 +9,6 @@
 (defvar user-home-directory (file-name-as-directory (getenv "HOME")))
 (setq user-emacs-directory (file-name-as-directory (expand-file-name ".emacs.d" user-home-directory)))
 
-(setq org-directory (let ((dir (file-name-as-directory (expand-file-name "org" user-home-directory))))
-                      (make-directory dir :parents)
-                      dir))
-
 (defvar user-personal-directory (let ((dir (file-name-as-directory (expand-file-name "personal" user-emacs-directory))))
                                   (make-directory dir :parents)
                                   dir)
