@@ -9,11 +9,6 @@
 (defvar user-home-directory (file-name-as-directory (getenv "HOME")))
 (setq user-emacs-directory (file-name-as-directory (expand-file-name ".emacs.d" user-home-directory)))
 
-(defvar modi/temporary-file-directory (let ((dir (file-name-as-directory (expand-file-name user-login-name temporary-file-directory))))
-                                        (make-directory dir :parents)
-                                        dir)
-  "User-specific temporary directory name.")
-
 (setq org-directory (let ((dir (file-name-as-directory (expand-file-name "org" user-home-directory))))
                       (make-directory dir :parents)
                       dir))
