@@ -9,27 +9,10 @@
 (defvar user-home-directory (file-name-as-directory (getenv "HOME")))
 (setq user-emacs-directory (file-name-as-directory (expand-file-name ".emacs.d" user-home-directory)))
 
-(defvar user-personal-directory (let ((dir (file-name-as-directory (expand-file-name "personal" user-emacs-directory))))
-                                  (make-directory dir :parents)
-                                  dir)
-  "User's personal directory to contain non-git-controlled files.")
-(setq custom-file (expand-file-name "custom-file.el" user-personal-directory))
-
 (defvar emacs-version-short (format "%s_%s"
                                     emacs-major-version emacs-minor-version)
   "A variable to store the current emacs versions as <MAJORVER>_<MINORVER>.
 So, for emacs version 25.0.50.1, this variable will be 25_0.")
-
-(defvar modi/org-version-select 'elpa
-  "Variable to choose the version of Org to be loaded.
-Valid values are `dev', `elpa' and `emacs'.
-
-When set to `dev', the development version of Org built locally is loaded.
-When set to `elpa', Org is installed and loaded from Org Elpa.
-When set to `emacs', the Org version shipped with Emacs is used.
-
-The value is defaulted to `elpa' as few things in this config
-need Org version to be at least 9.x.")
 
 (defvar modi/states (make-hash-table :test 'equal)
   "Hash table to store the states of various variables throughout
@@ -67,14 +50,12 @@ need Org version to be at least 9.x.")
     gist
     git-timemachine ; walk through git revisions
     ggtags ctags-update
-    hideshow-org
     htmlize
     hungry-delete
     hydra
     ibuffer-projectile
     imenu-list
     indent-guide
-    org-noter ; takes notes associated to pdf files in org mode
     isend-mode ; used in setup-perl.el
     ivy swiper counsel
     key-chord ; map pairs of simultaneously pressed keys to commands
@@ -87,14 +68,9 @@ need Org version to be at least 9.x.")
     multiple-cursors
     neotree
     nov    ;Ebook (.epub) reader
-    org-cliplink ; paste copied links as well-formatted org-mode links with desc
-    org-tree-slide
-    outorg navi-mode ; supporting packages for outshine
-    outshine ; org-mode navigation and organization outside org-mode
     paradox ; package menu improvements
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
     pomodoro
-    poporg ; edit comments from any other mode in org mode
     rainbow-delimiters
     rainbow-mode
     region-bindings-mode ; complements really well with multiple-cursors
@@ -152,12 +128,7 @@ need Org version to be at least 9.x.")
 
 ;; Basic requires
 (require 'subr-x)                       ;For when-let*, if-let*, ..
-;; Place `setup-var-overrides.el' with `(provide 'setup-var-overrides)' in
-;; `user-personal-directory'
-(add-to-list 'load-path user-personal-directory)
-(require 'setup-var-overrides nil :noerror)
 
-(load custom-file :noerror :nomessage) ; Load the `M-x customize` generated file
 (load (locate-user-emacs-file "general.el") nil :nomessage)
 (load (locate-user-emacs-file "setup-packages.el") nil :nomessage)
 ;; (package-initialize) ; Do NOT delete this comment
@@ -260,14 +231,12 @@ need Org version to be at least 9.x.")
 (require 'setup-neotree)
 (require 'setup-news)
 (require 'setup-nov)
-;; (require 'setup-org) ;; TODO: Issues with org-mode: https://github.com/kaushalmodi/.emacs.d/issues/45
 (require 'setup-outshine)
 (when (executable-find "p4")
   (require 'setup-p4))
 (require 'setup-page-break-lines)
 (require 'setup-pcache)
 (require 'setup-pomodoro)
-(require 'setup-poporg)
 (with-eval-after-load 'setup-tags
   ;; Below causes `help-function-arglist' error on evaluating "(string-match-p "." nil)"
   ;; on emacs 25.1 or older.
@@ -341,12 +310,6 @@ need Org version to be at least 9.x.")
 (require 'setup-toggles)
 (require 'setup-unicode)
 (require 'setup-windows-buffers)
-
-;; Place `setup-work.el' with `(provide 'setup-work)' in `user-personal-directory'
-(require 'setup-work nil :noerror)
-
-;; Place `setup-personal.el' with `(provide 'setup-personal)' in `user-personal-directory'
-(require 'setup-personal nil :noerror)
 
 ;; The `setup-misc' must be the last package to be required except for
 ;; `setup-desktop'.
