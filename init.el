@@ -22,7 +22,6 @@
     auto-highlight-symbol
     avy ; > ace-jump-mode
     beacon ; visual flash to show the cursor position
-    bm ; visual bookmarks
     buffer-move
     command-log-mode ; for logging commands; useful when demoing emacs
     deft ; quick note taking and management
