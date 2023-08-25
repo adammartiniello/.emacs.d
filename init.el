@@ -30,9 +30,7 @@
     drag-stuff
     easy-escape ; Make the \\ escape chars more pleasant looking in elisp regexps
     expand-region
-    eww-lnum ; jump to links in eww buffer ace-jump style
     fill-column-indicator
-    flycheck                    ; sh-shellcheck
     flyspell-correct-ivy ; ivy interface for correct spelling suggestions
     fold-this
     gist
@@ -182,14 +180,12 @@
 (require 'setup-drag-stuff)
 (when (executable-find "tmux")
   (require 'setup-emamux))
-(require 'setup-eww)
 (require 'setup-expand-region)
 ;; Below will cause emacs to freeze on evaluating "(string-match-p "." nil)"
 ;; on emacs 25.1 or older.
 ;; http://debbugs.gnu.org/cgi/bugreport.cgi?bug=23949
 (require 'setup-fci)
 (require 'setup-fold)
-(require 'setup-flycheck)
 (require 'setup-gist)
 (when (executable-find "git")
   (require 'setup-diff)
