@@ -29,7 +29,6 @@
     easy-escape ; Make the \\ escape chars more pleasant looking in elisp regexps
     expand-region
     fill-column-indicator
-    flyspell-correct-ivy ; ivy interface for correct spelling suggestions
     fold-this
     gist
     git-timemachine ; walk through git revisions
@@ -41,7 +40,7 @@
     imenu-list
     indent-guide
     isend-mode ; used in setup-perl.el
-    ivy swiper counsel
+    swiper counsel
     key-chord ; map pairs of simultaneously pressed keys to commands
     kurecolor ; Quick tweaks to color codes in CSS files
     magit ; for git management
@@ -195,9 +194,6 @@
   (require 'setup-hugo))
 (require 'setup-hungry-delete)
 (require 'setup-ibuffer)
-(if (bound-and-true-p disable-pkg-ivy)
-    (require 'setup-ido)
-  (require 'setup-ivy))
 (require 'setup-imenu-list)
 (require 'setup-indent-guide)
 (require 'setup-info)
