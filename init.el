@@ -6,9 +6,6 @@
 (defvar modi/gc-cons-threshold--orig gc-cons-threshold)
 (setq gc-cons-threshold (* 100 1024 1024)) ;100 MB before garbage collection
 
-;; Remove dot from in-between the first and last names if present.
-(setq user-full-name (replace-regexp-in-string "\\." " " user-full-name))
-
 (defvar user-home-directory (file-name-as-directory (getenv "HOME")))
 (setq user-emacs-directory (file-name-as-directory (expand-file-name ".emacs.d" user-home-directory)))
 
