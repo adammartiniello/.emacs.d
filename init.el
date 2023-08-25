@@ -55,7 +55,6 @@
     rainbow-delimiters
     rainbow-mode
     region-bindings-mode ; complements really well with multiple-cursors
-    rpn-calc
     shackle
     smart-compile
     smart-mark
@@ -164,7 +163,6 @@
 (require 'setup-bookmarks)
 (require 'setup-buffer-move)
 (require 'setup-c)
-(require 'setup-calc)
 (require 'setup-counsel)
 (require 'setup-de-ansify)
 (require 'setup-devdocs)
