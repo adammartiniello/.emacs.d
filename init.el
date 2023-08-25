@@ -41,7 +41,6 @@
     isend-mode ; used in setup-perl.el
     swiper counsel
     key-chord ; map pairs of simultaneously pressed keys to commands
-    kurecolor ; Quick tweaks to color codes in CSS files
     magit ; for git management
     manage-minor-mode
     markdown-mode
@@ -188,14 +187,11 @@
 (require 'setup-header2)
 (require 'setup-highlight)
 (require 'setup-htmlize)
-(when (executable-find "hugo")
-  (require 'setup-hugo))
 (require 'setup-hungry-delete)
 (require 'setup-ibuffer)
 (require 'setup-imenu-list)
 (require 'setup-indent-guide)
 (require 'setup-info)
-(require 'setup-kurecolor)
 (require 'setup-linum)
 (require 'setup-manage-minor-mode)
 (require 'setup-mastodon)
