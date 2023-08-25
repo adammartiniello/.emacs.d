@@ -35,7 +35,6 @@
     ggtags ctags-update
     htmlize
     hungry-delete
-    hydra
     ibuffer-projectile
     imenu-list
     indent-guide
@@ -144,7 +143,6 @@
 (require 'setup-paradox)
 (require 'setup-region-bindings-mode)
 (require 'setup-key-chord)
-(require 'setup-hydra)
 (require 'setup-tags)
 ;; End of basic requires
 
@@ -226,11 +224,9 @@
 (require 'setup-tiny)
 (require 'setup-tldr)
 ;; (require 'setup-undo-tree)
-(require 'setup-weather)
 (require 'setup-webpaste)
 (require 'setup-which-func)
 (require 'setup-which-key)
-(require 'setup-wolfram)
 (when (executable-find "wn")
   (require 'setup-wordnut))
 (require 'setup-wrap-region)
