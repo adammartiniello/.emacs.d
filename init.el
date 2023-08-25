@@ -9,15 +9,6 @@
 (defvar user-home-directory (file-name-as-directory (getenv "HOME")))
 (setq user-emacs-directory (file-name-as-directory (expand-file-name ".emacs.d" user-home-directory)))
 
-(defvar emacs-version-short (format "%s_%s"
-                                    emacs-major-version emacs-minor-version)
-  "A variable to store the current emacs versions as <MAJORVER>_<MINORVER>.
-So, for emacs version 25.0.50.1, this variable will be 25_0.")
-
-(defvar modi/states (make-hash-table :test 'equal)
-  "Hash table to store the states of various variables throughout
-  this config.")
-
 (defconst my-packages
   '(ace-window
     adaptive-wrap ; indented line wrapping
