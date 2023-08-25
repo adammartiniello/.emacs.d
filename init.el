@@ -30,8 +30,6 @@
     dired-single dired-collapse
     drag-stuff
     easy-escape ; Make the \\ escape chars more pleasant looking in elisp regexps
-    el2markdown ; Generate README.md files from Commentary section in .el files
-    engine-mode ; search engines
     expand-region
     eww-lnum ; jump to links in eww buffer ace-jump style
     fill-column-indicator
@@ -186,8 +184,6 @@
 (when (executable-find "tmux")
   (require 'setup-emamux))
 (require 'setup-eww)
-(require 'setup-el2markdown)
-(require 'setup-engine-mode)
 (require 'setup-expand-region)
 ;; Below will cause emacs to freeze on evaluating "(string-match-p "." nil)"
 ;; on emacs 25.1 or older.
