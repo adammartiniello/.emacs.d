@@ -23,8 +23,6 @@
     avy ; > ace-jump-mode
     beacon ; visual flash to show the cursor position
     buffer-move
-    command-log-mode ; for logging commands; useful when demoing emacs
-    deft ; quick note taking and management
     diff-hl
     dired-single dired-collapse
     drag-stuff
@@ -171,10 +169,8 @@
 (require 'setup-buffer-move)
 (require 'setup-c)
 (require 'setup-calc)
-(require 'setup-command-log-mode)
 (require 'setup-counsel)
 (require 'setup-de-ansify)
-(require 'setup-deft)
 (require 'setup-devdocs)
 (require 'setup-dired)
 (require 'setup-drag-stuff)
