@@ -69,11 +69,8 @@
     web-mode
     webpaste   ; Paste code snippets to ptpb.pw (default), ix.io, etc.
     which-key ; > guide-key
-    wolfram ; query wolframalpha; needs user to sign up for a developer AppID
-    wordnut ; offline dictionary (requires installing Wordnet wn application)
     wrap-region ; wrap selection with punctuations, tags (org-mode, markdown-mode, ..)
     writegood-mode ; highlight passive voice, weasel words and duplicates
-    xkcd ; comic
     yafolding ; indentation detected code folding
     yaml-mode ; Useful for editing Octopress' _config.yml
     yasnippet
@@ -217,11 +214,8 @@
 (require 'setup-webpaste)
 (require 'setup-which-func)
 (require 'setup-which-key)
-(when (executable-find "wn")
-  (require 'setup-wordnut))
 (require 'setup-wrap-region)
 (require 'setup-writegood)
-(require 'setup-xkcd)
 (require 'setup-yasnippet)
 
 ;; Languages
