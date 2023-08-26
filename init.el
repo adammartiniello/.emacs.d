@@ -41,16 +41,6 @@
     yaml-mode ; Useful for editing Octopress' _config.yml
     yasnippet
 
-    ;; Themes
-    ;; zenburn-theme ; < fork
-    ;; smyx-theme ; < fork
-    ample-theme ; ample, ample-flat, ample-light
-    darktooth-theme ; coffee
-    leuven-theme ; awesome white background theme
-    planet-theme ; dark blue
-    tao-theme ; monochrome
-    twilight-bright-theme
-    twilight-anti-bright-theme
     ;; nlinum ; better performance than linum ; Sticking to frozen version 1.7 in my config
     ;; git-link ; get git links with line numbers and commit-hash/branch ; < fork
     ;; git-gutter git-gutter-fringe git-gutter+ git-gutter-fringe+ ; < diff-hl
