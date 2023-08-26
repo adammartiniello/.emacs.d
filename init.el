@@ -33,10 +33,8 @@
     region-bindings-mode ; complements really well with multiple-cursors
     smart-mode-line popup rich-minority
     transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
-    ;; undo-tree ; supercool undo visualization
     use-package use-package-chords ; optimize package loading
     visual-regexp
-    ;; volatile-highlights
     which-key ; > guide-key
     wrap-region ; wrap selection with punctuations, tags (org-mode, markdown-mode, ..)
     yafolding ; indentation detected code folding
