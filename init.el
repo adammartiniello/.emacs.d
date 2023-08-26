@@ -21,7 +21,6 @@
     beacon ; visual flash to show the cursor position
     buffer-move
     diff-hl
-    fill-column-indicator
     git-timemachine ; walk through git revisions
     ggtags ctags-update
     ibuffer-projectile
