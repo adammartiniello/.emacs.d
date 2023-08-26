@@ -31,7 +31,6 @@
     multiple-cursors
     region-bindings-mode ; complements really well with multiple-cursors
     smart-mode-line popup rich-minority
-    transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
     use-package use-package-chords ; optimize package loading
     visual-regexp
     which-key ; > guide-key
