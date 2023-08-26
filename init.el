@@ -37,19 +37,16 @@
     magit ; for git management
     markdown-mode
     minibuffer-line
-    multi-term
     multiple-cursors
     paradox ; package menu improvements
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
     region-bindings-mode ; complements really well with multiple-cursors
     smart-mode-line popup rich-minority
-    tldr                ;Concise "man pages"
     transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
     ;; undo-tree ; supercool undo visualization
     use-package use-package-chords ; optimize package loading
     visual-regexp
     ;; volatile-highlights
-    webpaste   ; Paste code snippets to ptpb.pw (default), ix.io, etc.
     which-key ; > guide-key
     wrap-region ; wrap selection with punctuations, tags (org-mode, markdown-mode, ..)
     yafolding ; indentation detected code folding
@@ -164,11 +161,6 @@
   (require 'setup-projectile))
 (when (executable-find "rg")
   (require 'setup-rg))
-(require 'setup-server)
-(require 'setup-term)
-(require 'setup-tldr)
-;; (require 'setup-undo-tree)
-(require 'setup-webpaste)
 (require 'setup-which-func)
 (require 'setup-which-key)
 (require 'setup-wrap-region)
