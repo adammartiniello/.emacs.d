@@ -47,9 +47,6 @@
     rainbow-delimiters
     rainbow-mode
     region-bindings-mode ; complements really well with multiple-cursors
-    shackle
-    smart-compile
-    smart-mark
     smart-mode-line popup rich-minority
     tldr                ;Concise "man pages"
     transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
@@ -63,7 +60,6 @@
     yafolding ; indentation detected code folding
     yaml-mode ; Useful for editing Octopress' _config.yml
     yasnippet
-    zop-to-char
 
     ;; Themes
     ;; zenburn-theme ; < fork
@@ -83,7 +79,6 @@
     ;; git-link ; get git links with line numbers and commit-hash/branch ; < fork
     ;; ido-vertical-mode flx-ido ido-ubiquitous ; < ivy, counsel
     ;; git-gutter git-gutter-fringe git-gutter+ git-gutter-fringe+ ; < diff-hl
-    ;; popwin ; < shackle
     ;; helm helm-swoop ; < swiper
     ;; helm-gtags ; < ggtags
     ;; projectile ; Better than fiplr < fork
@@ -102,9 +97,6 @@
 ;;   I call this function in setup-packages.el and so am keeping the
 ;; commented out version here so that package.el does not add it again.
 
-(eval-when-compile
-  (require 'use-package)                ;Auto-requires `bind-key' too
-  (setq use-package-always-ensure nil))
 (require 'use-package-chords)
 
 (use-package benchmark-init
@@ -131,7 +123,6 @@
 ;; Set up the looks of emacs
 (require 'setup-mode-line)
 (require 'setup-visual)
-(require 'setup-shackle)
 
 ;; Set up packages
 (require 'setup-abbrev)
@@ -222,7 +213,6 @@
 
 ;; Blend of other setup
 (require 'setup-backup)
-(require 'setup-compile)
 (require 'setup-editing)
 (require 'setup-image)
 (require 'setup-launcher)
