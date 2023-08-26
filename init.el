@@ -17,7 +17,6 @@
                                         ; directly in ag buffer
     all all-ext ; edit ALL lines matching regex
     anzu   ; shows total search hits in mode line, > query-replace
-    ascii-art-to-unicode
     auto-complete fuzzy
     auto-highlight-symbol
     avy ; > ace-jump-mode
@@ -33,7 +32,6 @@
     gist
     git-timemachine ; walk through git revisions
     ggtags ctags-update
-    htmlize
     hungry-delete
     ibuffer-projectile
     imenu-list
@@ -49,7 +47,6 @@
     multiple-cursors
     paradox ; package menu improvements
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
-    pomodoro
     rainbow-delimiters
     rainbow-mode
     region-bindings-mode ; complements really well with multiple-cursors
@@ -178,7 +175,6 @@
   (require 'setup-magit))
 (require 'setup-header2)
 (require 'setup-highlight)
-(require 'setup-htmlize)
 (require 'setup-hungry-delete)
 (require 'setup-ibuffer)
 (require 'setup-imenu-list)
@@ -194,7 +190,6 @@
   (require 'setup-p4))
 (require 'setup-page-break-lines)
 (require 'setup-pcache)
-(require 'setup-pomodoro)
 (with-eval-after-load 'setup-tags
   ;; Below causes `help-function-arglist' error on evaluating "(string-match-p "." nil)"
   ;; on emacs 25.1 or older.
