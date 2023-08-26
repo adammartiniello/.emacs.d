@@ -66,7 +66,6 @@
     use-package use-package-chords ; optimize package loading
     visual-regexp
     ;; volatile-highlights
-    web-mode
     webpaste   ; Paste code snippets to ptpb.pw (default), ix.io, etc.
     which-key ; > guide-key
     wrap-region ; wrap selection with punctuations, tags (org-mode, markdown-mode, ..)
@@ -223,7 +222,6 @@
 (require 'setup-elisp)
 (when (executable-find "go")
   (require 'setup-go))
-(require 'setup-gujarati)
 (require 'setup-latex)
 (require 'setup-markdown)
 (when (executable-find "matlab")
@@ -238,7 +236,6 @@
   (require 'setup-sml))
 (require 'setup-tcl)
 (require 'setup-verilog)
-(require 'setup-web-mode)
 (require 'setup-yaml-mode)
 
 (>=e "25.1"
