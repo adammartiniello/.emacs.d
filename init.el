@@ -118,14 +118,9 @@
 (require 'setup-yaml-mode)
 
 ;; Blend of other setup
-(require 'setup-backup)
 (require 'setup-editing)
-(require 'setup-image)
-(require 'setup-launcher)
-(require 'setup-mouse)
-(require 'setup-navigation)
-(require 'setup-pdf)
-(require 'setup-print)
+(require 'setup-mouse) ; mouse scrolling
+(require 'setup-navigation) ; mouse scrolling
 (require 'setup-registers)
 (require 'setup-search)
 (when (or (executable-find "aspell")
