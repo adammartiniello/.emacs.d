@@ -160,6 +160,3 @@
   (funcall default-theme-fn)) ; defined in `setup-visual.el'
 
 (setq emacs-initialized t)
-
-(when modi/gc-cons-threshold--orig
-  (run-with-idle-timer 5 nil (lambda () (setq gc-cons-threshold modi/gc-cons-threshold--orig))))
