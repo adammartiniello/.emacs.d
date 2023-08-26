@@ -18,7 +18,6 @@
     anzu   ; shows total search hits in mode line, > query-replace
     auto-complete fuzzy
     auto-highlight-symbol
-    beacon ; visual flash to show the cursor position
     buffer-move
     diff-hl
     git-timemachine ; walk through git revisions
@@ -79,9 +78,6 @@
   (require 'setup-ag))
 (require 'setup-all)
 (require 'setup-auto-complete)
-;; Wed Jun 10 16:10:59 EDT 2020 - kmodi
-;; Disabling beacon-mode to see if that solves minor performance glitches
-;; (require 'setup-beacon)
 (require 'setup-bookmarks)
 (require 'setup-buffer-move)
 (require 'setup-c)
