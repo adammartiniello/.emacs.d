@@ -28,7 +28,6 @@
     key-chord ; map pairs of simultaneously pressed keys to commands
     magit ; for git management
     markdown-mode
-    minibuffer-line
     multiple-cursors
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
     region-bindings-mode ; complements really well with multiple-cursors
