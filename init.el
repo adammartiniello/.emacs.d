@@ -22,8 +22,6 @@
     buffer-move
     diff-hl
     dired-single dired-collapse
-    easy-escape ; Make the \\ escape chars more pleasant looking in elisp regexps
-    expand-region
     fill-column-indicator
     git-timemachine ; walk through git revisions
     ggtags ctags-update
@@ -135,7 +133,6 @@
 (require 'setup-dired)
 (when (executable-find "tmux")
   (require 'setup-emamux))
-(require 'setup-expand-region)
 (when (executable-find "git")
   (require 'setup-diff)
   (require 'setup-git-link)
