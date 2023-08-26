@@ -54,8 +54,6 @@
     smart-compile
     smart-mark
     smart-mode-line popup rich-minority
-    sunshine forecast ; weather
-    sx
     tiny
     tldr                ;Concise "man pages"
     transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
@@ -200,7 +198,6 @@
 (when (executable-find "rg")
   (require 'setup-rg))
 (require 'setup-server)
-(require 'setup-sx)
 (require 'setup-term)
 (require 'setup-tiny)
 (require 'setup-tldr)
