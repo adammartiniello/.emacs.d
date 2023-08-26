@@ -53,7 +53,6 @@
     smart-compile
     smart-mark
     smart-mode-line popup rich-minority
-    tiny
     tldr                ;Concise "man pages"
     transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
     ;; undo-tree ; supercool undo visualization
@@ -63,7 +62,6 @@
     webpaste   ; Paste code snippets to ptpb.pw (default), ix.io, etc.
     which-key ; > guide-key
     wrap-region ; wrap selection with punctuations, tags (org-mode, markdown-mode, ..)
-    writegood-mode ; highlight passive voice, weasel words and duplicates
     yafolding ; indentation detected code folding
     yaml-mode ; Useful for editing Octopress' _config.yml
     yasnippet
@@ -194,21 +192,17 @@
   (require 'setup-rg))
 (require 'setup-server)
 (require 'setup-term)
-(require 'setup-tiny)
 (require 'setup-tldr)
 ;; (require 'setup-undo-tree)
 (require 'setup-webpaste)
 (require 'setup-which-func)
 (require 'setup-which-key)
 (require 'setup-wrap-region)
-(require 'setup-writegood)
 (require 'setup-yasnippet)
 
 ;; Languages
 (require 'setup-conf)
 (require 'setup-elisp)
-(when (executable-find "go")
-  (require 'setup-go))
 (require 'setup-latex)
 (require 'setup-markdown)
 (when (executable-find "matlab")
