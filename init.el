@@ -73,7 +73,6 @@
 ;; `setup-var-overrides.el'.
 (when (not (bound-and-true-p disable-pkg-modi-mode))
   (require 'modi-mode))
-(require 'temp-mode)
 
 (require 'setup-region-bindings-mode)
 (require 'setup-key-chord)
