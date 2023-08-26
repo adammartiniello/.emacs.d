@@ -25,7 +25,6 @@
     easy-escape ; Make the \\ escape chars more pleasant looking in elisp regexps
     expand-region
     fill-column-indicator
-    fold-this
     git-timemachine ; walk through git revisions
     ggtags ctags-update
     hungry-delete
@@ -140,11 +139,6 @@
 (when (executable-find "tmux")
   (require 'setup-emamux))
 (require 'setup-expand-region)
-;; Below will cause emacs to freeze on evaluating "(string-match-p "." nil)"
-;; on emacs 25.1 or older.
-;; http://debbugs.gnu.org/cgi/bugreport.cgi?bug=23949
-(require 'setup-fci)
-(require 'setup-fold)
 (when (executable-find "git")
   (require 'setup-diff)
   (require 'setup-git-link)
