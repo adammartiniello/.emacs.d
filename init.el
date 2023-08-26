@@ -10,8 +10,7 @@
 (setq user-emacs-directory (file-name-as-directory (expand-file-name ".emacs.d" user-home-directory)))
 
 (defconst my-packages
-  '(ace-window
-    adaptive-wrap ; indented line wrapping
+  '(adaptive-wrap ; indented line wrapping
     ag wgrep wgrep-ag s ; ag > ack > grep
                                         ; wgrep+wgrep-ag allow editing files
                                         ; directly in ag buffer
@@ -24,7 +23,6 @@
     buffer-move
     diff-hl
     dired-single dired-collapse
-    drag-stuff
     easy-escape ; Make the \\ escape chars more pleasant looking in elisp regexps
     expand-region
     fill-column-indicator
@@ -137,7 +135,6 @@
 
 ;; Set up packages
 (require 'setup-abbrev)
-(require 'setup-ace-window)
 (when (executable-find "ag")
   (require 'setup-ag))
 (require 'setup-all)
@@ -153,7 +150,6 @@
 (require 'setup-de-ansify)
 (require 'setup-devdocs)
 (require 'setup-dired)
-(require 'setup-drag-stuff)
 (when (executable-find "tmux")
   (require 'setup-emamux))
 (require 'setup-expand-region)
