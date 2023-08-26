@@ -40,7 +40,6 @@
     swiper counsel
     key-chord ; map pairs of simultaneously pressed keys to commands
     magit ; for git management
-    manage-minor-mode
     markdown-mode
     minibuffer-line
     multi-term
@@ -179,11 +178,7 @@
 (require 'setup-indent-guide)
 (require 'setup-info)
 (require 'setup-linum)
-(require 'setup-manage-minor-mode)
-(require 'setup-mastodon)
 (require 'setup-multiple-cursors)
-(require 'setup-news)
-(require 'setup-outshine)
 (when (executable-find "p4")
   (require 'setup-p4))
 (require 'setup-page-break-lines)
