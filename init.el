@@ -29,7 +29,6 @@
     magit ; for git management
     markdown-mode
     multiple-cursors
-    page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
     region-bindings-mode ; complements really well with multiple-cursors
     smart-mode-line popup rich-minority
     transpose-frame ; for the priceless `rotate-frame' and `transpose-frame'
@@ -114,10 +113,6 @@
 (require 'setup-info)
 (require 'setup-linum)
 (require 'setup-multiple-cursors)
-(when (executable-find "p4")
-  (require 'setup-p4))
-(require 'setup-page-break-lines)
-(require 'setup-pcache)
 (with-eval-after-load 'setup-tags
   ;; Below causes `help-function-arglist' error on evaluating "(string-match-p "." nil)"
   ;; on emacs 25.1 or older.
