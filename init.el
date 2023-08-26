@@ -111,8 +111,6 @@
   (require 'setup-nim))
 (require 'setup-python)
 (require 'setup-shell)
-(when (executable-find "sml")
-  (require 'setup-sml))
 (require 'setup-tcl)
 (require 'setup-verilog)
 (require 'setup-yaml-mode)
