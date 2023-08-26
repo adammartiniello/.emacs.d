@@ -24,8 +24,6 @@
     git-timemachine ; walk through git revisions
     ibuffer-projectile
     imenu-list
-    indent-guide
-    isend-mode ; used in setup-perl.el
     swiper counsel
     key-chord ; map pairs of simultaneously pressed keys to commands
     magit ; for git management
@@ -131,7 +129,6 @@
 (require 'setup-highlight)
 (require 'setup-ibuffer)
 (require 'setup-imenu-list)
-(require 'setup-indent-guide)
 (require 'setup-info)
 (require 'setup-linum)
 (require 'setup-multiple-cursors)
@@ -160,7 +157,6 @@
   (require 'setup-matlab))
 (when (executable-find "nim")
   (require 'setup-nim))
-(require 'setup-perl)
 (require 'setup-python)
 (require 'setup-shell)
 (require 'setup-spice)
