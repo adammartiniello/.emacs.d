@@ -123,12 +123,6 @@
 (require 'setup-navigation) ; mouse scrolling
 (require 'setup-registers)
 (require 'setup-search)
-(when (or (executable-find "aspell")
-          (executable-find "hunspell"))
-  (require 'setup-spell))
-(require 'setup-toggles)
-(require 'setup-unicode)
-(require 'setup-windows-buffers)
 
 ;; The `setup-misc' must be the last package to be required except for
 ;; `setup-desktop'.
