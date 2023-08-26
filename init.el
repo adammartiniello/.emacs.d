@@ -34,7 +34,6 @@
     markdown-mode
     minibuffer-line
     multiple-cursors
-    paradox ; package menu improvements
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
     region-bindings-mode ; complements really well with multiple-cursors
     smart-mode-line popup rich-minority
@@ -102,7 +101,6 @@
   (require 'modi-mode))
 (require 'temp-mode)
 
-(require 'setup-paradox)
 (require 'setup-region-bindings-mode)
 (require 'setup-key-chord)
 (require 'setup-tags)
@@ -117,7 +115,6 @@
 (when (executable-find "ag")
   (require 'setup-ag))
 (require 'setup-all)
-(require 'setup-artist)
 (require 'setup-auto-complete)
 ;; Wed Jun 10 16:10:59 EDT 2020 - kmodi
 ;; Disabling beacon-mode to see if that solves minor performance glitches
