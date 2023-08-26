@@ -35,7 +35,6 @@
     use-package use-package-chords ; optimize package loading
     visual-regexp
     which-key ; > guide-key
-    wrap-region ; wrap selection with punctuations, tags (org-mode, markdown-mode, ..)
     yafolding ; indentation detected code folding
     yaml-mode ; Useful for editing Octopress' _config.yml
     yasnippet
@@ -122,7 +121,6 @@
   (require 'setup-rg))
 (require 'setup-which-func)
 (require 'setup-which-key)
-(require 'setup-wrap-region)
 (require 'setup-yasnippet)
 
 ;; Languages
