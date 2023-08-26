@@ -42,8 +42,6 @@
     multiple-cursors
     paradox ; package menu improvements
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
-    rainbow-delimiters
-    rainbow-mode
     region-bindings-mode ; complements really well with multiple-cursors
     smart-mode-line popup rich-minority
     tldr                ;Concise "man pages"
@@ -170,8 +168,6 @@
   ;; on emacs 25.1 or older.
   ;; http://debbugs.gnu.org/cgi/bugreport.cgi?bug=23949
   (require 'setup-projectile))
-(require 'setup-rainbow-delimiters)
-(require 'setup-rainbow-mode)
 (when (executable-find "rg")
   (require 'setup-rg))
 (require 'setup-server)
