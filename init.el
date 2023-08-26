@@ -47,8 +47,6 @@
     minibuffer-line
     multi-term
     multiple-cursors
-    neotree
-    nov    ;Ebook (.epub) reader
     paradox ; package menu improvements
     page-break-lines ; Convert the ^L (form feed) chars to horizontal lines
     pomodoro
@@ -194,9 +192,7 @@
 (require 'setup-manage-minor-mode)
 (require 'setup-mastodon)
 (require 'setup-multiple-cursors)
-(require 'setup-neotree)
 (require 'setup-news)
-(require 'setup-nov)
 (require 'setup-outshine)
 (when (executable-find "p4")
   (require 'setup-p4))
