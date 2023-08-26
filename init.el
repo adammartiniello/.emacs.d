@@ -18,7 +18,6 @@
     anzu   ; shows total search hits in mode line, > query-replace
     auto-complete fuzzy
     auto-highlight-symbol
-    avy ; > ace-jump-mode
     beacon ; visual flash to show the cursor position
     buffer-move
     diff-hl
@@ -27,7 +26,6 @@
     expand-region
     fill-column-indicator
     fold-this
-    gist
     git-timemachine ; walk through git revisions
     ggtags ctags-update
     hungry-delete
@@ -149,7 +147,6 @@
 ;; http://debbugs.gnu.org/cgi/bugreport.cgi?bug=23949
 (require 'setup-fci)
 (require 'setup-fold)
-(require 'setup-gist)
 (when (executable-find "git")
   (require 'setup-diff)
   (require 'setup-git-link)
