@@ -22,7 +22,6 @@
     buffer-move
     diff-hl
     git-timemachine ; walk through git revisions
-    ggtags ctags-update
     ibuffer-projectile
     imenu-list
     indent-guide
@@ -66,7 +65,6 @@
     ;; ido-vertical-mode flx-ido ido-ubiquitous ; < ivy, counsel
     ;; git-gutter git-gutter-fringe git-gutter+ git-gutter-fringe+ ; < diff-hl
     ;; helm helm-swoop ; < swiper
-    ;; helm-gtags ; < ggtags
     ;; projectile ; Better than fiplr < fork
     )
   "A list of packages to ensure are installed at launch")
@@ -102,7 +100,6 @@
 
 (require 'setup-region-bindings-mode)
 (require 'setup-key-chord)
-(require 'setup-tags)
 ;; End of basic requires
 
 ;; Set up the looks of emacs
