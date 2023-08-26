@@ -104,9 +104,6 @@
 (require 'setup-yasnippet)
 
 ;; Languages
-(require 'setup-conf)
-(require 'setup-elisp)
-(require 'setup-latex)
 (require 'setup-markdown)
 (when (executable-find "matlab")
   (require 'setup-matlab))
@@ -114,17 +111,11 @@
   (require 'setup-nim))
 (require 'setup-python)
 (require 'setup-shell)
-(require 'setup-spice)
 (when (executable-find "sml")
   (require 'setup-sml))
 (require 'setup-tcl)
 (require 'setup-verilog)
 (require 'setup-yaml-mode)
-
-(>=e "25.1"
-    nil       ; Emacs 25.1 has `M-.' bound to `xref-find-definitions' by default
-                                        ; which works better than elisp-slime-nav
-  (require 'setup-elisp-slime-nav))
 
 ;; Blend of other setup
 (require 'setup-backup)
