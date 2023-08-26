@@ -21,11 +21,9 @@
     beacon ; visual flash to show the cursor position
     buffer-move
     diff-hl
-    dired-single dired-collapse
     fill-column-indicator
     git-timemachine ; walk through git revisions
     ggtags ctags-update
-    hungry-delete
     ibuffer-projectile
     imenu-list
     indent-guide
@@ -129,8 +127,6 @@
 (require 'setup-c)
 (require 'setup-counsel)
 (require 'setup-de-ansify)
-(require 'setup-devdocs)
-(require 'setup-dired)
 (when (executable-find "tmux")
   (require 'setup-emamux))
 (when (executable-find "git")
@@ -140,7 +136,6 @@
   (require 'setup-magit))
 (require 'setup-header2)
 (require 'setup-highlight)
-(require 'setup-hungry-delete)
 (require 'setup-ibuffer)
 (require 'setup-imenu-list)
 (require 'setup-indent-guide)
